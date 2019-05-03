@@ -1,0 +1,245 @@
+  body{
+            background-color: #f2f2f2;
+        }
+      .s-header {
+        background-color: #FFFFFF;
+        text-align: center;
+        height: 78px;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      .header__nav-wrap {
+        display: inline-block;
+      }
+
+      .header__nav-wrap a {
+        color: rgba(0, 0, 0, 0.6);
+      }
+
+      .header__nav-wrap .header__nav-heading {
+        font-family: "Nunito Sans", sans-serif;
+        font-weight: 800;
+        font-size: 1.5rem;
+        line-height: 1.2;
+        color: #111860;
+        text-transform: uppercase;
+        letter-spacing: .3rem;
+        margin-top: 8.4rem;
+        text-align: center;
+      }
+
+      .header__nav-wrap .header__nav-heading,
+      .header__nav-wrap .close-mobile-menu {
+        display: none;
+      }
+
+      .header__nav {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        font-family: "Nunito Sans", sans-serif;
+        font-weight: 600;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        line-height: 78px;
+      }
+
+      .header__nav li {
+        display: inline-block;
+        position: relative;
+        padding: 0 1.5rem;
+      }
+
+      .header__nav li.has-children {
+        padding-right: 3.3rem;
+      }
+
+      .header__nav li a {
+        display: block;
+        color: rgba(0, 0, 0, 0.6);
+        -webkit-transition: color 0.3s ease-in-out;
+        transition: color 0.3s ease-in-out;
+      }
+
+      .header__nav li.has-children > a::after {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+        border-right: 1px solid rgba(0, 0, 0, 0.5);
+        content: '';
+        display: block;
+        height: 5px;
+        width: 5px;
+        margin-top: -3px;
+        pointer-events: none;
+        position: absolute;
+        right: 1.8rem;
+        top: 50%;
+        -webkit-transform-origin: 66% 66%;
+        -ms-transform-origin: 66% 66%;
+        transform-origin: 66% 66%;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+      }
+
+      .header__nav li:hover li,
+      .header__nav li:focus li {
+        background: transparent;
+      }
+
+      .header__nav li:hover > a,
+      .header__nav li:focus > a {
+        color: #000000;
+      }
+
+      .header__nav li.current > a {
+        color: #000000;
+      }
+
+      .header__nav li ul {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        font-size: 15px;
+        font-weight: 400;
+        margin: 0;
+        padding: 1.8rem 0;
+        background: #151515;
+        border-radius: 0 0 3px 3px;
+        z-index: 500;
+        -webkit-transform: translate3d(0, 15px, 0);
+        -ms-transform: translate3d(0, 15px, 0);
+        transform: translate3d(0, 15px, 0);
+        -webkit-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+        opacity: 0;
+        visibility: hidden;
+      }
+
+      .header__nav li ul ul {
+        position: absolute;
+        top: 0;
+        left: 100%;
+        left: calc(100% + 1px);
+        border-radius: 0 0 3px 3px;
+        padding-top: 1.2rem;
+      }
+
+      .header__nav li ul li {
+        display: block;
+        text-align: left;
+        padding: 0;
+        margin: 0;
+        min-height: 33px;
+        width: 100%;
+      }
+
+      .header__nav li ul li a {
+        display: block;
+        white-space: nowrap;
+        padding: 7.5px 3rem 7.5px 2rem;
+        font-family: "Nunito Sans", sans-serif;
+        text-transform: none;
+        letter-spacing: 0;
+        line-height: 18px;
+        color: rgba(255, 255, 255, 0.6);
+      }
+
+      .header__nav li ul li a:hover,
+      .header__nav li ul li a:focus {
+        color: #FFFFFF;
+      }
+
+      .header__nav li:hover > ul {
+        opacity: 1;
+        visibility: visible;
+        -webkit-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+      }
+      .s-content {
+        background-color: #f2f2f2;
+        padding-top: 6rem;
+        padding-bottom: 7.2rem;
+      }
+
+      .s-content--no-padding-bottom {
+        padding-bottom: 0;
+      }
+
+      .s-content--narrow .row {
+        max-width: 1000px;
+      }
+
+      .s-content__header {
+        text-align: center;
+        position: relative;
+      }
+      .s-content__main, .entry__main {
+        padding-left: 7rem;
+        padding-right: 7rem;
+      }
+
+      .s-content__main img, .entry__main img {
+        max-width: 1000px;
+        margin: 3rem 0 3rem -7rem;
+      }
+
+      .s-content__main p img, .entry__main p img {
+        margin-bottom: 0;
+      }
+
+      .entry__main {
+        margin-top: 6rem;
+      }
+      input[type=submit] {
+            border-radius: 4px;
+            color: white;
+            border: 1px solid #449df5;
+            cursor: pointer;
+            display: block;
+            font-size: 16px;
+            margin: 11px auto 0 auto;
+            padding: 7px 17px;
+            background: #449ef5;
+            width: 221.4px;
+            transition: all 0.25s ease;
+            -webkit-appearance: none;
+        }
+      input[type=submit]:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 2px 12px rgba(0, 6, 12, 0.3);
+        }  
+      .listP {
+        list-style-type: none;
+      }
+       
+      .itemP img {
+        float: left;
+        margin: 10px;
+        border: 5px solid #fff;
+       
+        -webkit-transition: box-shadow 0.5s ease;
+        -moz-transition: box-shadow 0.5s ease;
+        -o-transition: box-shadow 0.5s ease;
+        -ms-transition: box-shadow 0.5s ease;
+        transition: box-shadow 0.5s ease;
+      }
+       
+      .itemP img:hover {
+        -webkit-box-shadow: 0px 0px 7px rgba(255,255,255,0.9);
+      }
+      figure {
+        display: inline-block;
+    }
+    figcaption {
+      margin: 10px 0 0 0;
+      font-variant: small-caps;
+      font-family: Arial;
+      font-weight: bold;
+      color: #bb3333;
+    }
